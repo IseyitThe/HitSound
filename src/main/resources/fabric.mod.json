@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "hitsound",
+  "version": "${version}",
+  "name": "HitSound",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Seyit/HitSound"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/hitsound/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.seyit.hitsound.HitSound"
+    ],
+    "modmenu": [
+      "me.seyit.hitsound.integration.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "hitsound.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13",
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "cloth-config": ">=11.0.99",
+    "modmenu": ">=7.1.0"
+  },
+  "custom": {
+    "hitsound": {
+      "links": {
+        "hitsound.github": "github.com/IseyitTHe"
+      },
+      "parent": {
+        "id": "hitsound",
+        "name": "HitSound API",
+        "description": "Hit sound mod that plays a sound when you hit an entity.",
+        "icon": "assets/hitsound/icon.png"
+      },
+      "update_checker": true
+    }
+  }
+}
